@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../jfui.css"/>
+    <link rel="stylesheet" href="../../font/font-line.css"/>
+    <link rel="stylesheet" href="formSelect1.css">
+	  <style>
+        blockquote, body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        div, dl, dt, dd, ul, ol, li, a, input, select, textarea, span {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="jf-formSelect1">
+    <div class="jf-formSelect1-filter">
+        <div class="jf-formSelect1-inputBlock">
+            <input type="text"   placeholder="请选择" class="jf-formSelect1-inputTitle">
+        </div>
+        <i class="jf-formSelect1-arrow jf-formSelect1-show"></i>
+    </div>
+</div>
+<div class="jf-formSelect1" style="margin-top:500px;">
+    <div class="jf-formSelect1-filter">
+        <div class="jf-formSelect1-inputBlock">
+            <input type="text"   placeholder="请选择" class="jf-formSelect1-inputTitle">
+        </div>
+        <i class="jf-formSelect1-arrow jf-formSelect1-show"></i>
+    </div>
+</div>
+<script src="jquery-1.12.4.js"></script>
+<script src="formSelect1.js"></script>
+<script>
+    //<option value="select" selected>请选择</option>//添加selected 默认选项
+    //<option value="1" disabled>111</option>  disabled禁止
+    //url默认未null,如果有url路径,从url里面获取数据,如果没有url请求,从data里面获取数据
+    new window["formSelect1"]($('.jf-formSelect1'),{
+//        url:'formSelect1.json',//请求数据
+        ajaxType:'GET',//post静态资源有问题
+        width:'300px',//控制宽度,默认宽度是100%
+//        height:'200px',//控制高度,默认高度是300px;
+        Sradio:false,//显示radio按钮,同时只能点击按钮才能选择,如果没有显示radio按钮则可以点击文字选择
+        data:[//没有url下
+            {"label": "会议申请", "value": "1"},
+            {"label": "来文", "value": "2"},
+            {"label": "发文", "value": "3"},
+            {"label": "内部文", "value": "4"},
+            {"label": "请休假申请", "value": "5"},
+            {"label": "稿件", "value": "6"},
+            {"label": "一体化公文", "value": "7"},
+            {"label": "督查子任务", "value": "8"},
+            {"label": "考勤异常备案申请", "value": "9"}
+        ],
+        onItem:function (e) {
+            console.log('点击');
+        }
+    });
+</script>
+</body>
+</html>

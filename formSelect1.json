@@ -1,0 +1,12 @@
+[
+  {"label": "会议申请", "value": "1"},
+  {"label": "来文", "value": "2"},
+  {"label": "发文", "value": "3"},
+  {"label": "内部文", "value": "4"},
+  {"label": "请休假申请", "value": "5"},
+  {"label": "稿件", "value": "6"},
+  {"label": "一体化公文", "value": "7"},
+  {"label": "督查子任务", "value": "8"},
+  {"label": "考勤异常备案申请", "value": "9"},
+  {"label": "会议申请", "value": "10"}
+]

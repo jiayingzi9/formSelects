@@ -1,0 +1,184 @@
+.jf-formSelect1{font-size:12px;}
+.jf-formSelect1-label{
+    float: left;
+    display: block;
+    padding: 9px 15px;
+    width: 80px;
+    font-weight: 400;
+    text-align: right;
+}
+.jf-formSelect1-inputTitle{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 1.3;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.inlineG-jdf{
+    float: left;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.input-inlineG-jdf{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+}
+.form-mid-jdf{
+    float: left;
+    display: block;
+    padding: 8px 0!important;
+    margin-right: 10px;
+    line-height: 20px;
+    position: relative;
+}
+.word-aux-jdf{
+    color: #999!important;
+}
+.jf-formSelect1-select{
+    display:none;
+}
+.jf-formSelect1-filter{
+    position:relative;
+}
+.jf-formSelect1-arrow{
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #c2c2c2;
+    background-size: 100%;
+    right: 10px;
+    top: 13px;
+    transition: all .2s;
+
+}
+/*js插件jf-formSelect1-show控制箭头*/
+.jf-formSelect1-show{
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+/*js插件控制的css*/
+.jf-formSelect1-list li:hover {
+    background-color: #f2f2f2;
+}
+.jf-formSelect1-disabled {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-color: #fff;
+}
+.jf-formSelect1-disabled{
+    display: block;
+    color: #d2d2d2;
+}
+.jf-formSelect1-list li.jf-formSelect1-disabled:hover{
+    cursor: not-allowed!important;
+    background-color: #fff;
+}
+/*js插件jf-formSelect1-selectedColor控制颜色*/
+.jf-formSelect1-list li.jf-formSelect1-selectedColor {
+    background-color: #5FB878;
+}
+.jf-formSelect1-list li.jf-formSelect1-selectedColor a{
+    color: #fff;
+}
+.jf-formSelect1-list >li>a{
+    width: 100%;
+    display: inline-block;
+}
+/*改变滚动样式*/
+.jf-formSelect1-list::-webkit-scrollbar {/*滚动条整体样式*/
+    width:8px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height:100%;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.jf-formSelect1-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+.jf-formSelect1-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+/*隐藏的ul样式*/
+.jf-formSelect1-list{
+    display: none;
+    /*width: calc(100%)-15px;*/
+    /*max-height: 300px;*/
+    background-color: #fff;
+    font-size: 14px;
+    /*position: absolute;*/
+    left: 0;
+    z-index: 99;
+    border: 1px solid #e6e6e6;
+    overflow: auto;
+}
+.jf-formSelect1-list li.filter-null{
+    color: #d2d2d2;
+}
+
+.jf-formSelect1-list li {
+    display: block;
+    padding: 0 10px;
+    line-height: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.filter-box-jdf{position:relative;}
+.textareaJh-jdf{
+    min-height: 100px;
+    height: auto;
+    padding: 6px 10px;
+    resize: vertical;
+    display: block;
+    width: 98%;
+    border-color: #e6e6e6;
+}
+.fromG-btnBlock-jdf{margin-top:20px;}
+.fromG-btn{
+    display: inline-block;
+    height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.fromG-btn-reset{
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555;
+}
+.jf-formSelect1-Sradio{
+    display:none;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+/*去除隐藏IE10默认在input框输入内容后显示“X”按钮*/
+::-ms-clear{display:none;}
+::-ms-reveal{display:none;}
